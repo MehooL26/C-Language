@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main ()
+{
+    int num[8],i;
+    int sum=0;
+    printf("Enter your digits: ");
+for (i=0;i<8;++i)
+    scanf("%d",&num[i]);
+for (i=0;i<8;++i)
+    sum = sum + num[i];
+    
+    printf("the sum of the digits is: %d",sum);
+}
