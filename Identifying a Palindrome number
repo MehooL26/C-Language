@@ -1,0 +1,32 @@
+#include <stdio.h>
+void palindrom(int);
+int main ()
+{
+    int num,num1;
+    printf("Enter a number: \n");
+    scanf("%d",&num);
+    
+    palindrom (num);
+    
+}
+
+void palindrom(num)
+{
+    int rev,r,num1;
+    rev=0;
+    num1=num;
+    while (num!=0)
+    {
+        r=num%10;
+        rev = rev*10+r;
+        num = num/10;
+    }
+    
+    printf("%d\n",rev);
+    printf("%d\n",num1);
+    
+    if (rev == num1)
+        printf("The number is a palindrome number.\n");
+    else
+        printf("The number is not a palindrome number.\n");
+}
