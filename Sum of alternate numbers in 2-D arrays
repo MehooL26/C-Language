@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main ()
+{
+    int num[3][3],r,c;
+    int sum1=0;
+    int sum2=0;
+    printf("Enter 9 numbers: ");
+    for(r=0;r<3;r++)
+    for (c=0;c<3;c++)
+    scanf("%d",&num[r][c]);
+    
+    for (r=0;r<3;r++)
+        {
+            for (c=0;c<3;c++)
+        printf("%d\t",num[r][c]);
+        printf("\n");
+        }
+
+    for (r=0;r<3;r++)
+    {
+        for (c=0;c<3;c=c+2)
+        sum1=sum1+num[r][c];
+        printf("The sum of odd alternate numbers for each row: %d\n",sum1);
+    }    
+        printf("The sum of odd alternate numbers of all the rows is: %d\n",sum1);
+        
+        
+    for (r=0;r<3;r++)
+    {
+        for (c=1;c<3;c=c+2)
+        sum2=sum2+num[r][c];
+        printf("The sum of odd alternate numbers for each row: %d\n",sum2);
+    }
+        printf("The sum of even alternate numbers in all the rows is: %d\n",sum2);
+        
+}
