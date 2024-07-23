@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main ()
+{
+    int a;
+    printf("Enter a number:");
+    scanf("%d",&a);
+if (a>=1 && a<=5)
+    if (a==1)
+        printf("The colour is black");
+    else if(a==2)
+        printf("The colour is blue");
+    else if(a==3)
+        printf("The colour is red");
+    else if(a==4)
+        printf("The colour is yellow");
+    else if(a==5)
+        printf("The colour is orange");
+else 
+    printf("Wrong input");
+}
