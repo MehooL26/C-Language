@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main ()
+{
+    int num[6],i,b;
+    int a=0;
+    printf("enter 6 numbers: ");
+    
+for(i=0;i<6;++i)
+    scanf("%d",&num[i]);
+    
+for(i=0;i<6;++i)
+    printf("The numbers are: %d\n",num[i]);
+    
+for(i=0;i<6;++i)
+        if (num[i]>a)
+            a=num[i];
+            
+     printf("The Greatest number is: %d\n",a);
+    b=num[0]; 
+for (i=1;i<6;++i)
+        if (num[i]<b)
+            b=num[i];
+            
+    printf("The smallest number is: %d",b);
+}
