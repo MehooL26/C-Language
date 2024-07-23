@@ -1,0 +1,45 @@
+#include <stdio.h>
+void sum ();// declaration or prototype
+void difference (int,int);
+int product();
+int quo(int,int);
+int main()
+{
+    int num1,num2,p;
+    printf("Enter 2 numbers for difference: \n");
+    scanf("%d%d",&num1,&num2);
+    printf("Address in main %ld %ld\n",&num1,&num2);
+    sum(); // call
+    difference (num1,num2);
+    p=product();
+    printf("product is %d\n: ",p);
+    printf("The quotient is %d\n",quo(num1,num2));
+    return 0;
+}
+
+void sum () //definition
+{
+    int a,b;
+    printf("Enter 2 numbers for sum:\n");
+    scanf("%d%d",&a,&b);
+    printf("Result is: %d\n",a+b);
+}
+
+int product()
+{
+    int a,b;
+    printf("Enter 2 numbers for multiplication: ");
+    scanf ("%d %d",&a,&b);
+    return (a*b);
+}
+
+int quo (num1,num2)
+{
+    return(num1/num2);
+}
+
+void difference (int num1, int num2)
+{
+    printf("Address in difference is %ld %ld\n",&num1,&num2);
+    printf("Difference is %d\n",num1-num2);
+}
