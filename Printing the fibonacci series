@@ -1,0 +1,30 @@
+#include <stdio.h>
+void fib();
+int main ()
+{
+     fib();
+    
+    return 0;
+}
+
+void fib()
+{
+    int i,d,sum;
+    int c=1;
+    int a=0;
+    int b=1;
+    printf("Enter the number of terms u need: ");
+    scanf("%d",&d);
+    printf("%d %d ",a,b);
+    sum = a+b;
+    printf("%d ",sum);
+    for(i=0;i<=d;i++)
+    {
+         c=sum;
+        sum = sum + b;
+        printf("%d ",sum);
+        b=c;
+    
+    }
+    
+}
