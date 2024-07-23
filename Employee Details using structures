@@ -1,0 +1,35 @@
+#include <stdio.h>
+struct employee
+{
+    int citNo;
+    float salary;
+} person[5];
+
+void details();
+int main()
+{
+    int i;
+    printf("Enter the citNo for the employee:\n ");
+    for(i=0;i<5;i++)
+        scanf("%d",&person[i].citNo);
+   
+   
+   printf("Enter the salary for the employee: \n");
+    for(i=0;i<5;i++)
+        scanf("%f",&person[i].salary);
+    
+    
+  details();
+    
+    
+}
+
+void details()
+{
+    int i;
+     for(i=0;i<5;i++)
+    {
+    printf("person:%d, citNo:%d, salary:%f",i,person[i].citNo,person[i].salary);
+    printf("\n");
+    }
+}
