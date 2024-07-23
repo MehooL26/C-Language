@@ -1,0 +1,62 @@
+#include <stdio.h>
+void sum ();// declaration or prototype
+void difference (int,int);
+int product();
+int quo(int,int);
+int main()
+{
+    int num1,num2,opt,i;
+while (opt!=5)
+{
+    printf("1.Add\n2.Subtrtact\n3.Multiply\n4.Divide\n5.exit\n");
+    printf("Enter the option u want to execute:\n ");
+    scanf("%d",&opt);
+    if (opt==2 || opt == 4)
+        {
+        printf("Enter 2 numbers: ");
+        scanf("%d%d",&num1,&num2);
+        }
+    switch (opt)
+    {
+        case 1: sum();
+            break;
+        case 2: difference (num1,num2);
+                break;
+        case 3: printf("The product is:%d\n",product ());
+            break;
+        case 4: printf("The quotient is: %d\n",quo (num1,num2));
+            break;
+        case 5: printf("exited");
+            break;
+        default:printf("wrong option");
+    }
+}
+
+    return 0;
+}
+
+void sum () //definition
+{
+    int a,b;
+    printf("Enter 2 numbers for sum:\n");
+    scanf("%d%d",&a,&b);
+    printf("Result is: %d\n",a+b);
+}
+
+int product()
+{
+    int a,b;
+    printf("Enter 2 numbers for multiplication: ");
+    scanf ("%d %d",&a,&b);
+    return (a*b);
+}
+
+int quo (num1,num2)
+{
+    return(num1/num2);
+}
+
+void difference (int num1, int num2)
+{
+    printf("Difference is %d\n",num1-num2);
+}
