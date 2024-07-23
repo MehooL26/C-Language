@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main ()
+{
+    int num[3][3],r,c,b=0,s=0;
+    
+    printf("Enter 9 numbers: “);
+    for (r=0;r<3;r++)
+        for (c=0;c<3;c++)
+            scanf("%d",&num[r][c]);
+    
+    for (r=0;r<3;r++)
+    {
+        for (c=0;c<3;c++)
+             printf("%d  ",num[r][c]);
+        printf("\n");
+    }
+    for(r=0;r<3;r++)
+        for(c=0;c<3;c++)
+            if (num[r][c]>b)
+                b=num[r][c];
+    
+            
+        printf("The biggest number is: %d\n",b);
+        
+        s=num[0][0];
+    for(r=0;r<3;r++)
+        for(c=0;c<3;c++)
+            if(num[r][c]<s)
+                s=num[r][c];
+            
+        printf("The smallest number is %d",s);
+    
+}
