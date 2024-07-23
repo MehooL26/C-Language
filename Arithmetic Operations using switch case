@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main ()
+{
+    int number1, number2, opt;
+    do{
+   printf("1.Add \n 2.Subtract \n 3.Multiply \n 4.Divide \n 5.Exit \n");
+   scanf("%d",&opt);
+   printf("Enter 2 numbers:");
+   scanf("%d%d", &number1, &number2);
+   switch(opt)
+   {
+    case 1: printf("Result: %d", number1+number2);
+            break;
+    case 2: printf("Result: %d", number1-number2);
+            break;
+    case 3: printf("Result: %d", number1*number2);
+            break;
+    case 4: printf("Result: %d", number1/number2);
+            break;
+    case 5: exit(0);
+    default: printf("Enter the right input");
+   }
+    }while(opt!=5);
+}
