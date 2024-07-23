@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main ()
+{
+    int l,s;
+    int i=0;
+for (l=1;l<=3;l++)
+  {
+    for (s=1;s<=l;s++)
+      {  
+          i++;
+        printf("%d",i);
+      }
+    printf("\n");
+  }
+}
